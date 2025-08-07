@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://127.0.0.1:5500/Single%20-Page%20CV.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeProject</title>
+    <style>
+        header{
+            text-align: center;
+            color: red;
+        }
+        body{
+            margin: auto ;
+            margin-top: 50px;
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+
+        }
+        div{
+            border: solid 2px black;
+            padding: 20px;
+            margin-right: 20px;
+        }
+        table , th , td {
+            border:  1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            width: 600px;
+            height: 50px;
+            font-size:medium;
+        }
+        #Myedu{
+            max-width: 1000px;
+        }
+        .nameheading{
+            color: red;
+            font-weight: 200px;
+        }
+        #role{
+            font-weight: 100px;
+            color: blue;
+        }
+        address{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        .studydetails{
+            color: brown;
+            font-size: large;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>
+         <header>
+        <h1>Resume</h1>
+           </header>
+        <hr>
+        <h2 class="nameheading">Ravulapalli Ashok</h2>
+        <h6 id="role">Junior Frontend Developer</h6>
+        <address>
+            1-48/1 Seethalamma Street<br>
+            Enugupalem,Vinukonda,Palnadu,<br>
+            Andhra Pradesh-522649<br>
+            (905)276-5117<br>
+            ravulapalliashok@gmail.com
+        </address>
+
+        <h5 class="studydetails">Education:</h5>
+        <table id="Myedu">
+            <tbody><tr>
+                <th>Course</th>
+                 <th>College</th>
+                  <th>University</th>
+            </tr>
+            <tr>
+                <td>B.Tech</td>
+                 <td>ST.Mary's Group of Institution</td>
+                  <td>Jntuk</td>
+            </tr>
+             <tr>
+                <td>Intermediate</td>
+                 <td>KrishnaVeni Jr College</td>
+                  <td>Bieap</td>
+            </tr>
+             <tr>
+                <td>SSC</td>
+                 <td>Z.P.High School</td>
+                  <td>Bsap</td>
+            </tr>
+        </tbody></table>
+        <br>
+        <h5 class="studydetails">Experience:</h5>
+        <p style="font-size: large;">Fresher</p><br>
+        <h5 class="studydetails">Skills:</h5>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Responce Web Design</li>
+            <li>React.js</li>
+        </ul>
+        <br>
+        <h5 class="studydetails">Project:</h5>
+        <h6 class="studydetails">A REAL TIME SMART HELMET FOR DRIVER SAFETY USING IOT </h6>
+        <ol>
+            <li>Smart helmet is protective headgear use by biker to make driving safe.</li>
+            <li>This System has two modules, application module and helmet module</li>
+             <li>Helmet module which will help to detect accidents and drunken biker.</li>
+        </ol>
+        <br>
+        <h5 class="studydetails">Interpersonal Skills:</h5>
+        <ul>
+            <li>Self-Motivated</li>
+            <li>Fast Learner</li>
+            <li>Hard Working</li>
+            <li>Time Management</li>
+            <li>Team Management</li>
+            <li>Problem Solving</li>
+        </ul>
+        <h5 class="studydetails">Achievements:</h5>
+        <ol>
+            <li>2x District Champ</li>
+            <li>Ap State Championship in 2020</li>
+            <li>AI University Games in 2021</li>
+        </ol>
+        <h5 class="studydetails">Languages:</h5>
+        <ol>
+            <li>Telugu</li>
+            <li>English</li>
+        </ol>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
